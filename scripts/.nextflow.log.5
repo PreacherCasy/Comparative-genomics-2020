@@ -1,0 +1,43 @@
+Nov-05 02:17:17.360 [main] DEBUG nextflow.cli.Launcher - $> nextflow ./phylogenyPipeline.nfl
+Nov-05 02:17:17.498 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 19.10.0
+Nov-05 02:17:17.509 [main] INFO  nextflow.cli.CmdRun - Launching `./phylogenyPipeline.nfl` [cheeky_galileo] - revision: 43332f41cf
+Nov-05 02:17:17.603 [main] DEBUG nextflow.extension.OperatorEx - Dataflow extension methods: branch,buffer,chain,choice,collate,collect,collectFile,combine,concat,count,countBy,countFasta,countFastq,countLines,countText,cross,distinct,filter,first,flatMap,flatten,fork,groupBy,groupTuple,ifEmpty,into,join,last,map,max,mean,merge,min,mix,phase,print,println,randomSample,reduce,separate,set,splitCsv,splitFasta,splitFastq,splitText,spread,subscribe,sum,take,tap,toDouble,toFloat,toInteger,toList,toLong,toSortedList,transpose,unique,until,view
+Nov-05 02:17:17.611 [main] DEBUG nextflow.Session - Session uuid: 57a28b80-de51-4b1f-88b6-697bad9b6320
+Nov-05 02:17:17.611 [main] DEBUG nextflow.Session - Run name: cheeky_galileo
+Nov-05 02:17:17.613 [main] DEBUG nextflow.Session - Executor pool size: 72
+Nov-05 02:17:17.625 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 19.10.0 build 5170
+  Created: 21-10-2019 15:07 UTC 
+  System: Linux 4.4.0-145-generic
+  Runtime: Groovy 2.5.8 on Java HotSpot(TM) 64-Bit Server VM 1.8.0_201-b09
+  Encoding: UTF-8 (ANSI_X3.4-1968)
+  Process: 31235@76e59e0dd910.lab7.arriam.ru [172.21.0.2]
+  CPUs: 72 - Mem: 1007.8 GB (6.4 GB) - Swap: 6.4 GB (17.1 MB)
+Nov-05 02:17:17.692 [main] DEBUG nextflow.Session - Work-dir: /home/yura/compgenomics_assignment/scripts/work [ext2/ext3]
+Nov-05 02:17:17.692 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/yura/compgenomics_assignment/scripts/bin
+Nov-05 02:17:17.722 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Nov-05 02:17:17.725 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Nov-05 02:17:17.904 [main] DEBUG nextflow.Session - Session start invoked
+Nov-05 02:17:18.707 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Nov-05 02:17:18.816 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-05 02:17:18.817 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-05 02:17:18.822 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Nov-05 02:17:18.829 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=72; memory=1007.8 GB; capacity=72; pollInterval=100ms; dumpInterval=5m
+Nov-05 02:17:18.942 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > SanityCheck -- maxForks: 72
+Nov-05 02:17:19.025 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-05 02:17:19.026 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-05 02:17:19.026 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > selectModels -- maxForks: 72
+Nov-05 02:17:19.029 [main] DEBUG nextflow.script.BaseScript - No entry workflow defined
+Nov-05 02:17:19.030 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Nov-05 02:17:19.030 [main] DEBUG nextflow.Session - Session await
+Nov-05 02:17:19.230 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-05 02:17:19.238 [Task submitter] INFO  nextflow.Session - [1a/1a977a] Submitted process > SanityCheck
+Nov-05 02:17:19.251 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-05 02:17:19.256 [Task submitter] INFO  nextflow.Session - [b4/548e71] Submitted process > selectModels
+Nov-05 02:17:19.269 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: SanityCheck; status: COMPLETED; exit: 0; error: -; workDir: /home/yura/compgenomics_assignment/scripts/work/1a/1a977a312bb4b2546108bbca29e4dd]
+Nov-05 02:17:19.356 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: selectModels; status: COMPLETED; exit: 0; error: -; workDir: /home/yura/compgenomics_assignment/scripts/work/b4/548e71729acf479f7e466bdbcfb2e6]
+Nov-05 02:17:19.358 [main] DEBUG nextflow.Session - Session await > all process finished
+Nov-05 02:17:19.359 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Nov-05 02:17:19.372 [main] DEBUG nextflow.trace.StatsObserver - Workflow completed > WorkflowStats[succeedCount=2; failedCount=0; ignoredCount=0; cachedCount=0; succeedDuration=79ms; failedDuration=0ms; cachedDuration=0ms]
+Nov-05 02:17:19.494 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Nov-05 02:17:19.515 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
