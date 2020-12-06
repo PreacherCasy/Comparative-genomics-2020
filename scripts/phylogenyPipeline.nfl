@@ -1,0 +1,32 @@
+#!/usr/bin/env nextflow
+
+params.wd='/home/yura/compgenomics_assignment/pangenomes'
+params.scripts='/home/yura/compgenomics_assignment/scripts'
+params.roarydir='high_level_only'
+params.idlevel='initial_50'
+params.criterion='BIC'
+
+
+process SanityCheck {
+
+output:
+stdout sanity
+"""
+echo "${params.wd}/${params.roarydir}/${params.idlevel}"
+"""
+}
+
+sanity.view { it }
+
+process selectModels {
+
+output:
+stdout model
+
+"""
+find ${params.wd}/${params.roarydir}/${params.idlevel}/* -name '*out' -exec ./${params.scripts}/extractModel.py -i {} \\;
+"""
+
+}
+
+model.view { it }

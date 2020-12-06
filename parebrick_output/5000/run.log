@@ -1,0 +1,84 @@
+[2020-11-23 01:50:25,298] INFO - <Running module: Preprocess Data>
+[2020-11-23 01:50:25,299] INFO - Converting block coords to infercars format
+[2020-11-23 01:50:25,309] INFO - <Module finished: Preprocess Data>, elapsed 0.011015176773071289 seconds
+[2020-11-23 01:50:25,309] INFO - <Running module: Parsers and check strains>
+[2020-11-23 01:50:25,317] INFO - Blocks count: 1
+[2020-11-23 01:50:25,318] INFO - Unique one-copy blocks count: 1
+[2020-11-23 01:50:25,321] INFO - Mean block coverage: 1.9711369886828625 %
+[2020-11-23 01:50:25,323] INFO - Mean unique one-copy blocks coverage: 1.9711369886828625 %
+[2020-11-23 01:50:25,327] INFO - Trying to root tree by first child of root
+[2020-11-23 01:50:25,327] INFO - Children of root: [Tree node 'GCF_006741185' (-0x7ffff80e14362a2a), Tree node '' (0x7f1ebc9d5b7), Tree node '' (0x7f1ebc9d5da)]
+[2020-11-23 01:50:25,331] INFO - Strains in blocks file count: 2
+[2020-11-23 01:50:25,331] INFO - Strains in tree leafs count: 65
+[2020-11-23 01:50:25,331] INFO - Intersected strains count: 0
+[2020-11-23 01:50:25,331] ERROR - Tree genomes: {tree_genomes}
+[2020-11-23 01:50:25,331] ERROR - Blocks genomes: {block_genomes}
+[2020-11-23 01:50:25,332] ERROR - Seems like strains in block files and in tree leafs have different ids, intersection is empty.
+[2020-11-23 01:51:28,659] INFO - <Running module: Preprocess Data>
+[2020-11-23 01:51:28,660] INFO - Converting block coords to infercars format
+[2020-11-23 01:51:28,674] INFO - <Module finished: Preprocess Data>, elapsed 0.014524459838867188 seconds
+[2020-11-23 01:51:28,674] INFO - <Running module: Parsers and check strains>
+[2020-11-23 01:51:28,684] INFO - Blocks count: 1
+[2020-11-23 01:51:28,685] INFO - Unique one-copy blocks count: 1
+[2020-11-23 01:51:28,689] INFO - Mean block coverage: 1.9711369886828625 %
+[2020-11-23 01:51:28,692] INFO - Mean unique one-copy blocks coverage: 1.9711369886828625 %
+[2020-11-23 01:51:28,697] INFO - Trying to root tree by first child of root
+[2020-11-23 01:51:28,698] INFO - Children of root: [Tree node 'GCF_006741185' (-0x7ffff8007c65482a), Tree node '' (0x7ff839ab7b7), Tree node '' (0x7ff839ab7da)]
+[2020-11-23 01:51:28,703] INFO - Strains in blocks file count: 2
+[2020-11-23 01:51:28,703] INFO - Strains in tree leafs count: 65
+[2020-11-23 01:51:28,703] INFO - Intersected strains count: 2
+[2020-11-23 01:51:28,703] DEBUG - PRUNING TREE
+[2020-11-23 01:51:28,703] DEBUG - Those strains are thrown away from tree because there were not found in blocks data: GCF_003099975, GCF_000009605, GCF_000174075, GCF_005083105, GCF_900699035, GCF_900128735, GCF_005082825, GCF_900699025, GCF_013487785, GCF_000521585, GCF_005080845, GCF_900698895, GCF_005080965, GCF_000183305, GCF_005082365, GCF_900128725, GCF_001648115, GCF_005080705, GCF_009069125, GCF_900698945, GCF_000521565, GCF_001700895, GCF_005083345, GCF_900560745, GCF_900698915, GCF_005081445, GCF_000225465, GCF_013394915, GCF_000183285, GCF_000183225, GCF_900016785, GCF_000007365, GCF_003671935, GCF_005080725, GCF_005080785, GCF_005081945, GCF_005080765, GCF_005083845, GCF_005082145, GCF_005080865, GCF_005082585, GCF_000521545, GCF_005080825, GCF_005080885, GCF_005083565, GCF_009068925, GCF_000225445, GCF_000183245, GCF_000007725, GCF_000521525, GCF_005081185, GCF_000217635, GCF_011035165, GCF_003096055, GCF_001280225, GCF_000090965, GCF_900128595, GCF_900698905, GCF_006741185, GCF_005237295, GCF_005081705, GCF_005080745, GCF_900698865
+[2020-11-23 01:51:28,709] INFO - <Module finished: Parsers and check strains>, elapsed 0.0344538688659668 seconds
+[2020-11-23 01:51:28,709] INFO - <Running module: Balanced rearrangements characters>
+[2020-11-23 01:51:28,710] INFO - Breakpoint graph parsed
+[2020-11-23 01:51:28,710] INFO - Edges in breakpoint graph: 1
+[2020-11-23 01:51:28,711] INFO - <Module finished: Balanced rearrangements characters>, elapsed 0.0019237995147705078 seconds
+[2020-11-23 01:51:28,711] INFO - <Running module: Balanced rearrangements stats>
+[2020-11-23 01:51:28,711] INFO - Counting distances between unique one-copy blocks, may take a while
+[2020-11-23 01:51:28,725] INFO - Got characters after breakpoint graph consideration: 0
+[2020-11-23 01:51:28,725] INFO - Left non-convex characters after filtering: 0
+[2020-11-23 01:51:28,725] INFO - <Module finished: Balanced rearrangements stats>, elapsed 0.014153003692626953 seconds
+[2020-11-23 01:51:28,725] INFO - <Running module: Balanced rearrangements output>
+[2020-11-23 01:51:28,726] INFO - <Module finished: Balanced rearrangements output>, elapsed 0.0006597042083740234 seconds
+[2020-11-23 01:51:28,726] INFO - <Running module: Unbalanced rearrangements characters>
+[2020-11-23 01:51:28,726] INFO - <Module finished: Unbalanced rearrangements characters>, elapsed 0.00010561943054199219 seconds
+[2020-11-23 01:51:28,726] INFO - <Running module: Unbalanced rearrangements stats and clustering>
+[2020-11-23 01:51:28,727] INFO - Got characters after copy number variation consideration: 1
+[2020-11-23 01:51:28,727] INFO - Left non-convex characters after filtering: 0
+[2020-11-23 01:51:28,727] INFO - Counting distances between non-convex character blocks, may take a while
+[2020-12-05 03:24:54,054] INFO - <Running module: Preprocess Data>
+[2020-12-05 03:24:54,054] INFO - Converting block coords to infercars format
+[2020-12-05 03:24:54,068] INFO - <Module finished: Preprocess Data>, elapsed 0.014205694198608398 seconds
+[2020-12-05 03:24:54,068] INFO - <Running module: Parsers and check strains>
+[2020-12-05 03:24:54,079] INFO - Blocks count: 1
+[2020-12-05 03:24:54,079] INFO - Unique one-copy blocks count: 1
+[2020-12-05 03:24:54,083] INFO - Mean block coverage: 1.9711369886828625 %
+[2020-12-05 03:24:54,085] INFO - Mean unique one-copy blocks coverage: 1.9711369886828625 %
+[2020-12-05 03:24:54,089] INFO - Trying to root tree by first child of root
+[2020-12-05 03:24:54,090] INFO - Children of root: [Tree node 'GCF_006741185' (-0x7ffff804c320f6e7), Tree node '' (-0x7ffff804c320f6fc), Tree node '' (0x7fb3cdf092b)]
+[2020-12-05 03:24:54,093] INFO - Strains in blocks file count: 2
+[2020-12-05 03:24:54,093] INFO - Strains in tree leafs count: 67
+[2020-12-05 03:24:54,094] INFO - Intersected strains count: 2
+[2020-12-05 03:24:54,094] DEBUG - PRUNING TREE
+[2020-12-05 03:24:54,094] DEBUG - Those strains are thrown away from tree because there were not found in blocks data: GCF_900699035, GCF_005080785, GCF_006741185, GCF_000183225, GCF_009069125, GCF_001700895, GCF_005080725, GCF_003671935, GCF_900016785, GCF_005080845, GCF_000225445, GCF_013487785, GCF_000174075, GCF_000225465, GCF_900128595, GCF_000521545, GCF_000521585, GCF_900698865, GCF_005082365, GCF_000021085, GCF_001280225, GCF_005080765, GCF_900699025, GCF_005083565, GCF_005080865, GCF_005082585, GCF_003096055, GCF_001648115, GCF_005082825, GCF_900698905, GCF_013394915, GCF_005083845, GCF_005083105, GCF_000007725, GCF_005081445, GCF_005081945, GCF_005081705, GCF_900128735, GCF_005080885, GCF_000217635, GCF_005237295, GCF_900560745, GCF_000007365, GCF_000521565, GCF_009068925, GCF_000183245, GCF_000183285, GCF_900698895, GCF_005082145, GCF_900128725, GCF_000021065, GCF_000183305, GCF_005083345, GCF_000521525, GCF_900698915, GCF_900698945, GCF_005080705, GCF_005080745, GCF_005080825, GCF_003099975, GCF_005081185, GCF_005080965, GCF_000009605, GCF_011035165, GCF_000090965
+[2020-12-05 03:24:54,097] INFO - <Module finished: Parsers and check strains>, elapsed 0.029156208038330078 seconds
+[2020-12-05 03:24:54,097] INFO - <Running module: Balanced rearrangements characters>
+[2020-12-05 03:24:54,099] INFO - Breakpoint graph parsed
+[2020-12-05 03:24:54,099] INFO - Edges in breakpoint graph: 1
+[2020-12-05 03:24:54,099] INFO - <Module finished: Balanced rearrangements characters>, elapsed 0.0019290447235107422 seconds
+[2020-12-05 03:24:54,099] INFO - <Running module: Balanced rearrangements stats>
+[2020-12-05 03:24:54,099] INFO - Counting distances between unique one-copy blocks, may take a while
+[2020-12-05 03:24:54,111] INFO - Got characters after breakpoint graph consideration: 0
+[2020-12-05 03:24:54,111] INFO - Left non-convex characters after filtering: 0
+[2020-12-05 03:24:54,111] INFO - <Module finished: Balanced rearrangements stats>, elapsed 0.011607885360717773 seconds
+[2020-12-05 03:24:54,111] INFO - <Running module: Balanced rearrangements output>
+[2020-12-05 03:24:54,112] INFO - <Module finished: Balanced rearrangements output>, elapsed 0.0003974437713623047 seconds
+[2020-12-05 03:24:54,112] INFO - <Running module: Unbalanced rearrangements characters>
+[2020-12-05 03:24:54,112] INFO - <Module finished: Unbalanced rearrangements characters>, elapsed 9.5367431640625e-05 seconds
+[2020-12-05 03:24:54,112] INFO - <Running module: Unbalanced rearrangements stats and clustering>
+[2020-12-05 03:24:54,112] INFO - Got characters after copy number variation consideration: 1
+[2020-12-05 03:24:54,112] INFO - Left non-convex characters after filtering: 0
+[2020-12-05 03:24:54,113] INFO - There is no non-convex characters, skipping clustering part
+[2020-12-05 03:24:54,113] INFO - <Module finished: Unbalanced rearrangements stats and clustering>, elapsed 0.0007212162017822266 seconds
+[2020-12-05 03:24:54,113] INFO - Total elapsed time: 0.059500694274902344 seconds

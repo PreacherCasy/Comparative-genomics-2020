@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+
+import click
+import ete3
+import os
+import pandas as pd
+
+"""
+"""
+
+def readTree(tree:click.Path):
+    pass
+
+
+def compareTrees(*args):
+    pass
+
+
+@click.command()
+@click.option()
+@click.option()
+
+
+def execute():
+    pass
+
+
