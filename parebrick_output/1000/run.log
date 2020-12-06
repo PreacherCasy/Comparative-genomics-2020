@@ -1,0 +1,33 @@
+[2020-12-05 00:25:59,150] INFO - <Running module: Preprocess Data>
+[2020-12-05 00:25:59,156] INFO - Converting block coords to infercars format
+[2020-12-05 00:26:00,323] INFO - <Module finished: Preprocess Data>, elapsed 1.1727783679962158 seconds
+[2020-12-05 00:26:00,324] INFO - <Running module: Parsers and check strains>
+[2020-12-05 00:26:00,605] INFO - Blocks count: 262
+[2020-12-05 00:26:00,606] INFO - Unique one-copy blocks count: 2
+[2020-12-05 00:26:00,647] INFO - Mean block coverage: 3.8554961130627174 %
+[2020-12-05 00:26:00,686] INFO - Mean unique one-copy blocks coverage: 0.8040458429588312 %
+[2020-12-05 00:26:00,691] INFO - Trying to root tree by first child of root
+[2020-12-05 00:26:00,691] INFO - Children of root: [Tree node 'GCF_006741185' (0x7f81636c25c), Tree node '' (0x7f81636c24e), Tree node '' (0x7f81636c271)]
+[2020-12-05 00:26:00,699] INFO - Strains in blocks file count: 67
+[2020-12-05 00:26:00,699] INFO - Strains in tree leafs count: 67
+[2020-12-05 00:26:00,699] INFO - Intersected strains count: 67
+[2020-12-05 00:26:00,700] INFO - <Module finished: Parsers and check strains>, elapsed 0.3760554790496826 seconds
+[2020-12-05 00:26:00,700] INFO - <Running module: Balanced rearrangements characters>
+[2020-12-05 00:26:00,733] INFO - Breakpoint graph parsed
+[2020-12-05 00:26:00,733] INFO - Edges in breakpoint graph: 2
+[2020-12-05 00:26:00,734] INFO - <Module finished: Balanced rearrangements characters>, elapsed 0.03441190719604492 seconds
+[2020-12-05 00:26:00,734] INFO - <Running module: Balanced rearrangements stats>
+[2020-12-05 00:26:00,734] INFO - Counting distances between unique one-copy blocks, may take a while
+[2020-12-05 00:26:00,893] INFO - Got characters after breakpoint graph consideration: 0
+[2020-12-05 00:26:00,894] INFO - Left non-convex characters after filtering: 0
+[2020-12-05 00:26:00,894] INFO - <Module finished: Balanced rearrangements stats>, elapsed 0.1595900058746338 seconds
+[2020-12-05 00:26:00,894] INFO - <Running module: Balanced rearrangements output>
+[2020-12-05 00:26:00,895] INFO - <Module finished: Balanced rearrangements output>, elapsed 0.0008244514465332031 seconds
+[2020-12-05 00:26:00,895] INFO - <Running module: Unbalanced rearrangements characters>
+[2020-12-05 00:26:00,908] INFO - <Module finished: Unbalanced rearrangements characters>, elapsed 0.013262748718261719 seconds
+[2020-12-05 00:26:00,909] INFO - <Running module: Unbalanced rearrangements stats and clustering>
+[2020-12-05 00:26:01,169] INFO - Got characters after copy number variation consideration: 262
+[2020-12-05 00:26:01,169] INFO - Left non-convex characters after filtering: 0
+[2020-12-05 00:26:01,169] INFO - There is no non-convex characters, skipping clustering part
+[2020-12-05 00:26:01,170] INFO - <Module finished: Unbalanced rearrangements stats and clustering>, elapsed 0.26105260848999023 seconds
+[2020-12-05 00:26:01,170] INFO - Total elapsed time: 2.0202724933624268 seconds

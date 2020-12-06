@@ -30,13 +30,14 @@ def namesFromColumns(df:pd.core.frame.DataFrame, ncol:tuple=(0,0), pattern:str=N
 @click.option('--input', '-i', help='Specify an input orthogroup table', type=click.Path(exists=True))
 @click.option('--sep', '-sp', help='Table field separator', type=str, default='\t')
 @click.option('--header', '-h', help='Table header specification', type=int, default=None)
-@click.option('--ncol', '-nc', help='Columns to be used as genome specifications', type=tuple, default=(0,0))
+@click.option('--ncol', '-nc', help='Columns to be used as genome specifications', type=(int, int), default=(0,0))
 @click.option('--pattern', '-p', help='Pattern to find genome-identifying columns by. Overrides "ncol" argument', type=str, default=None)
 
 def execute(input, sep, header, ncol, pattern):
     df = openDF(input, sep, header)
     name_dict = namesFromColumns(df, ncol, pattern)
-    print(name_dict)
+    for key in name_dict.keys():
+        print(f'{key}\t{name_dict[key]}')
 
 if __name__ == '__main__':
     execute()

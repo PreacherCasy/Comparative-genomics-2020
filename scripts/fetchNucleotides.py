@@ -9,18 +9,22 @@ import os
 import pandas as pd
 
 """
-Fetches the nucleotide sequences from the assembly annotations by the list of accessions from an another file (e.g., protein FASTA file
+Fetches the nucleotide sequences from the assembly annotations by the list of accessions from an another file (e.g., protein FASTA file)
 For the sake of compatibility with different annotation formats, inclusion check is performed instead of name identity check
 """
 
 def parseOrthogroups(input:str)->dict:
+    """
+    Parses OrthoFinder orthogroup table and returns a dictionary containing accessions for each
+    single-copy ortholog in each genome
+    """
+
     out = defaultdict(dict)
     with open(input, 'r') as handle:
         og = pd.read_csv(handle, sep='\t', header=0)
         genomes = list(filter(lambda x: x.find('Orthogroup') == -1, og.columns.values))
         for i in range(0, og.shape[0]):
             orths = pd.Series(og.iloc[i][1:])
-            print(orths)
             orths = orths[-orths.isnull()]
             orths = list(filter(lambda x: x.find('Orthogroup') == -1, orths))
             if len(orths) == len(genomes):
@@ -31,24 +35,30 @@ def parseOrthogroups(input:str)->dict:
 
 
 def findFile(directory:str, *args):
+    output_list = []
     for path, dirs, files in os.walk(directory):
         for file in files:
             if all(x in file for x in args):
-                return os.path.join(path, file)
+                output_list.append(os.path.join(path, file))
         for dir in dirs:
             findFile(dir, *args)
+    return output_list
 
 def extractOrthologousGenes(indict:defaultdict, input:str,  output:str, mode:str, misc:list=[]):
+    """
+    Extract single-copy orthologs according to the parseOrthogroups output and saves them
+    either filewise or genomewise. NOTE: the implementation of findFile here assumes that 
+    a provided set of identifiers will unequivocally identify s CDS-containing file
+    """
+
     if not os.path.exists(output):
         os.makedirs(output)
-
 
     for gen in indict.keys():
         pattern = '_'.join(gen.split('_')[0:2])
         record_list = []
         file = findFile(input, *[pattern, *misc])
-        print(file)
-        with gzip.open(file, 'rt') as handle:
+        with gzip.open(*file, 'rt') as handle:
             for record in SeqIO.parse(handle, 'fasta'):
                 for key in indict[gen].keys():
                     if key in record.id:
